@@ -1,0 +1,204 @@
+/* 引入base.less公共样式文件 */
+
+@import 'base.less';
+
+
+#header {
+    background-color: #ccc;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    >a{
+        flex: 1;
+        width: 45px;
+        height: 40px;
+        font-size: 14px;
+        text-align: center;
+        line-height: 40px;
+        color:#d00397;
+        
+    }
+    .wen{
+        text-align: center;
+        line-height: 40px;
+        font-size: 19px;
+        color: #000000;
+    }
+    .icon-my{
+            
+        >img{
+              width: 24px;
+              height: 23px;
+              color: #d20170;
+              position: absolute;
+              right: 9px;
+              top: 10px;
+        }
+    }
+}
+
+
+
+#slide{
+      position: relative;
+	img{
+		width: 100vw;
+	}
+	/* 覆盖小圆点的样式 */
+	.swiper-pagination{
+        // background-color: #fff;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        background-color: aliceblue;
+       
+	}
+}
+
+
+// 主体导航
+
+#nav {
+    padding: 8px 4px;
+    .nav-tabs{
+        display: flex;
+        flex-wrap: wrap;
+        >li{
+            width: 33.333%;
+            >a{
+                display: block;
+                text-align: center;
+                >img{
+                    // width: 204px;
+                    // height: 110px;
+                    width: 110px;
+                    height: 55px;
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+}
+
+
+
+//小图标导航
+
+#section{
+
+    .cix{
+        display: flex;
+        flex-wrap: wrap;
+        >li{
+            width: 25vw;
+            >a{
+                display: block;
+                text-align: center;
+                >img{
+                    border-top: 1px solid black;
+                    border-bottom: 1px solid black;
+                    width: 98px;
+                    height: 86px;
+                    & :nth-child(2n){
+                        border: 0px 1px black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// qizi
+
+#qizi{
+    .jd-market{		
+		.market-content{
+			border-bottom: 1px solid #ccc;
+			.product{
+				display:flex;
+				.product-left{
+					width: 50vw;
+					a{
+						display: block;
+						img{
+							width: 100%;
+						}
+					}
+				}
+				.product-right{
+					width: 50vw;
+					a{
+						display: block;
+						img{
+							/* 因为父元素a有边框 内容变小了和屏幕50%不一样 不能使用vw单位 使用100% */
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+//热门活动
+#huodong{
+     >a{
+        >img {
+            width: 100vw;
+        }
+     }
+}
+
+
+// 度周末
+#duzou{
+    display: flex;
+    height: 30px;
+       >.wu{
+           width: 50%;
+           font-size: 12px;
+           color: black;
+           text-align: center;
+           line-height: 30px;
+       }
+       >.sa{
+           width: 50%;
+           font-size: 12px;
+           color: black;
+           text-align: center;
+           line-height: 30px;
+       }
+}
+
+//
+#so{
+    .na{
+        >a{
+            img{
+                width: 100vw;
+            }
+        }
+        >a{
+            padding-top: 5px;
+            display: block;
+            font-size: 14px;
+            color: black;
+        }
+        >.quan{
+            font-size: 12px;
+            color: #ccc;
+        }
+    }
+}
+
+// 
+
+#genduo{
+    .duo{
+        
+    }
+}
